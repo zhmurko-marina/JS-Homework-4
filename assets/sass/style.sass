@@ -1,0 +1,226 @@
+/**************************************************
+    GENERAL STYLES
+/**************************************************/
+body
+  overflow-x: hidden
+  margin: 0 auto
+
+.container
+  width: 675px
+  margin: 0 auto
+
+@font-face
+  font-family: MyriadPro
+  src: url('../fonts/MyriadPro.eot'), url('../fonts/MyriadPro.woff')
+
+@font-face
+  font-family: 'Tahoma'
+  src: url('../fonts/Tahoma.eot'), url('../fonts/Tahoma.woff')
+
+h1, h3, h6
+  margin: 0
+
+.more-link::before
+  content: ''
+  background: url("../images/arrow-2.png") center no-repeat
+  padding: 7px
+
+/**************************************************
+    HEADER STYLES
+/**************************************************/
+header
+  height: 80px
+  background: linear-gradient(to top, #99cc01, #769715)
+  margin: 0 auto
+  img
+    padding-top: 28px
+    padding-left: 33px
+
+/**************************************************
+    NAVIGATION STYLES
+/**************************************************/
+nav
+  padding: 15px 0
+  ul
+    display: flex
+    justify-content: space-between
+    padding: 0 36px
+    li
+      list-style: none
+      position: relative
+    li:not(:last-child):after
+      content: ''
+      background: url("../images/arrow.png") no-repeat
+      padding: 7px
+      position: absolute
+      top: 4px
+      margin: 0 27px
+  a
+    text-decoration: none
+    color: #093500
+    font-family: MyriadPro
+    font-size: 20px
+    font-weight: 400
+    line-height: 14px
+    transition: 0.2s ease-out
+  a:hover
+    color: #80a60f
+
+/**************************************************
+    WELCOME STYLES
+/**************************************************/
+.welcome-wrap
+  display: flex
+  background: #eeeefb
+  padding: 0 20px
+  .welcome-wrap-text
+    h2
+      color: #093500
+      font-family: Tahoma
+      font-size: 32px
+      margin-left: -50px
+      font-weight: 100
+      span
+        font-weight: 700
+    p
+      font-family: Tahoma
+      font-weight: 400
+      font-size: 10px
+      line-height: 14px
+      margin-top: 0
+    h6
+      color: #80a60f
+      font-size: 11px
+      font-weight: 700
+      font-family: Tahoma
+
+/**************************************************
+    INFORMATION BLOCK STYLES
+/**************************************************/
+.information-wrap
+  padding: 0 20px 15px
+  display: flex
+  border-bottom: solid 5px #eeeefb
+  p
+    color: #093500
+    font-size: 10px
+    font-weight: 100
+    margin: 0 0 10px 0
+    font-family: Tahoma
+    line-height: 14px
+  h3
+    color: #093500
+    font-family: MyriadPro
+    font-size: 20px
+    font-weight: 400
+    line-height: 14px
+    padding-bottom: 20px
+  h6
+    color: #80a60f
+    font-size: 11px
+    font-weight: 700
+    font-family: Tahoma
+  .about-block
+    flex: 3 1 0px
+    margin-right: 20px
+    margin-top: 20px
+    position: relative
+  .about-block::after
+    position: absolute
+    padding-left: 20px
+    top: 4%
+    right: -20px
+    border-right: 1px solid #eeeefb
+    height: 83%
+    content: ""
+  .researchers-services-block
+    padding-left: 20px
+    flex: 5 1 0px
+    .inf
+      display: flex
+      margin: 20px 0
+      img
+        padding-right: 20px
+  .border-bottom
+    padding-bottom: 15px
+    border-bottom: 1px solid #eeeefb
+
+/**************************************************
+    FOOTER STYLES
+/**************************************************/
+footer
+  margin: 25px
+  p
+    color: #093500
+    font-family: Tahoma
+    font-size: 10px
+    font-weight: 400
+    line-height: 20px
+
+/**************************************************
+    MEDIA QUERIES
+/**************************************************/
+
+@media screen and (max-width: 675px)
+  .container
+    width: 100%
+  .welcome-wrap
+    padding: 30px 20px
+    .welcome-wrap-text
+      h2
+        font-size: 25px
+  nav
+    li
+      margin-right: 15px
+    li:not(:last-child):after
+      display: none
+  .information-wrap
+    padding: 0 20px 15px
+    flex-direction: column
+    .about-block
+      margin: 0
+      padding: 30px 30px 20px 20px
+      position: relative
+      border-bottom: solid 1px #eeeefb
+      flex: none
+      flex-grow: 0
+    .researchers-services-block
+      margin: 0
+      padding: 0
+      flex: none
+      flex-grow: 0
+    .inf
+      padding: 10px 10px 10px 20px
+    .about-block::after
+      display: none
+
+@media screen and (max-width: 520px)
+  .welcome-wrap
+    flex-direction: column
+    .welcome-wrap-text
+      h2
+        margin: 0
+  nav
+    ul
+      flex-wrap: wrap
+      justify-content: center
+      li
+        padding: 5px 0
+  .information-wrap
+    padding: 0
+
+@media screen and (max-width: 400px)
+  header
+    img
+      padding: 25px 10px
+  .information-wrap
+    img
+      margin: 0 0 15px
+    .researchers-services-block
+      flex: none
+      .inf
+        flex-direction: column
+        display: block
+      img
+        max-width: 141px
+        max-height: 94px
