@@ -260,9 +260,6 @@ footer p {
         -webkit-flex: none;
         -ms-flex: none;
         flex: none;
-        -webkit-flex-grow: 0;
-        -ms-flex-positive: 0;
-        flex-grow: 0;
     }
 
     .information-wrap .researchers-services-block {
@@ -271,9 +268,6 @@ footer p {
         -webkit-flex: none;
         -ms-flex: none;
         flex: none;
-        -webkit-flex-grow: 0;
-        -ms-flex-positive: 0;
-        flex-grow: 0;
     }
 
     .information-wrap .inf {
@@ -293,7 +287,7 @@ footer p {
     }
 
     .welcome-wrap .welcome-wrap-text h2 {
-        margin: 0;
+        margin: 15px 0;
     }
 
     nav ul {
@@ -323,21 +317,10 @@ footer p {
         margin: 0 0 15px;
     }
 
-    .information-wrap .researchers-services-block {
-        -webkit-flex: none;
-        -ms-flex: none;
-        flex: none;
-    }
-
     .information-wrap .researchers-services-block .inf {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
         display: block;
-    }
-
-    .information-wrap .researchers-services-block img {
-        max-width: 141px;
-        max-height: 94px;
     }
 }
